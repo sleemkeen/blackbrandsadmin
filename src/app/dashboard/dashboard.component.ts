@@ -8,10 +8,8 @@ import { HttpErrorResponse } from '@angular/common/http/src/response';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
   public prodata = [];
   public contactus = [];
-  public userdata = [];
 
   public token = localStorage.getItem('userToken');
 
@@ -33,25 +31,12 @@ export class DashboardComponent implements OnInit {
       }
     );
   }
-
-  // getUser() {
-  //   this.Auth.authUser(this.token).subscribe(
-  //     (data: any[]) => {
-  //       this.userdata = data;
-  //     }
-  //   );
-  // }
-
-getcontact() {
-
-  this.Auth.Contactus().subscribe(
-    (data: any[]) => {
-      this.contactus = data;
-    }
-  );
-
-}
-
-
-
+  
+  getcontact() {
+    this.Auth.Contactus().subscribe(
+      (data: any[]) => {
+        this.contactus = data;
+      }
+    );
+  }
 }

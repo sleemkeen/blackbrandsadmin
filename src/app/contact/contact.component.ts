@@ -10,6 +10,7 @@ import { HttpErrorResponse } from '@angular/common/http/src/response';
 
 export class ContactComponent implements OnInit {
 
+
   public contactus = [];
 
   constructor(public Auth: AuthService) { }
@@ -22,13 +23,11 @@ export class ContactComponent implements OnInit {
 
 
   getcontact() {
-
     this.Auth.Contactus().subscribe(
       (data: any[]) => {
         this.contactus = data;
       }
     );
-
   }
 
 }
