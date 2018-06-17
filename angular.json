@@ -23,9 +23,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/lib/perfect-scrollbar/css/perfect-scrollbar.min.css",
+              "src/assets/lib/material-design-icons/css/material-design-iconic-font.min.css",
+              "src/assets/lib/jquery.vectormap/jquery-jvectormap-1.2.2.css",
+              "src/assets/lib/jqvmap/jqvmap.min.css",
+              "node_modules/ngx-toastr/toastr.css"
+            
             ],
-            "scripts": []
+            "scripts": [
+
+            ]
           },
           "configurations": {
             "production": {

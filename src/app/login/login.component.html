@@ -1,0 +1,65 @@
+
+<body class="be-splash-screen">
+  <div class="be-wrapper be-login">
+    <div class="be-content">
+      <div class="main-content container-fluid">
+        <div class="splash-container">
+          <div class="panel panel-default panel-border-color panel-border-color-primary">
+            <div class="panel-heading">
+              <a href="#">
+                <img src="assets/img/weblogo1.png" alt="Myitem7" width="102" height="40" class="logo-img">
+              </a>
+              <span class="splash-description">ADMINISTRATIVE LOGIN</span>
+            </div>
+            <div class="panel-body">
+              <form (submit)="loginUser($event)">
+                <div class="form-group">
+                  <input id="username" type="text" placeholder="Email Address" autocomplete="off" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input id="password" type="password" placeholder="Password" class="form-control">
+                </div>
+                <div class="form-group row login-tools">
+                  <div class="col-xs-6 login-remember">
+                    <div class="be-checkbox">
+                      <input type="checkbox" id="remember">
+                      <label for="remember">Remember Me</label>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 login-forgot-password">
+                    <a data-toggle="modal" href='#modal-id'>Forgot Password?</a>
+                  </div>
+                </div>
+                <div class="form-group login-submit">
+                  <button type="submit" class="btn btn-primary btn-xl">Sign In</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Forgot Password -->
+  <div class="modal fade" id="modal-id">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Recover Password</h4>
+          <p>Enter your admin email address.</p>
+        </div>
+        <div class="modal-body">
+          <form action="" method="POST" class="form-inline" role="form">
+            <div class="form-group">
+              <input type="email" class="form-control" id="forgot-password" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-primary btn-xl">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>

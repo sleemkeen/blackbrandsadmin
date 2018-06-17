@@ -1,0 +1,144 @@
+<body>
+  <div class="be-wrapper be-fixed-sidebar">
+    <nav class="navbar navbar-default navbar-fixed-top be-top-header">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a routerLink="/dashboard" class="navbar-brand"></a>
+        </div>
+        <div class="be-right-navbar">
+          <ul class="nav navbar-nav navbar-right be-user-nav">
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">
+                <img src="assets/img/favicon.png" alt="Avatar">
+                <span class="user-name">Adey</span>
+              </a>
+
+            </li>
+          </ul>
+          <div class="page-title">
+            <span>
+              <i class="icon mdi mdi-home"></i> Dashboard</span>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation -->
+    <div class="be-left-sidebar">
+      <div class="left-sidebar-wrapper">
+        <a routerLink="/dashboard" class="left-sidebar-toggle">
+          <strong>
+            <i class="icon mdi mdi-home"></i> Dashboard</strong>
+        </a>
+        <div class="left-sidebar-spacer">
+          <div class="left-sidebar-scroll ps-container ps-theme-default" data-ps-id="263e20c1-3fb2-7930-aa6c-f94559d5ac6b">
+            <div class="left-sidebar-content">
+              <ul class="sidebar-elements">
+                <li class="divider"></li>
+                <li class="active">
+                  <a routerLink="/dashboard">
+                    <i class="icon mdi mdi-home"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a routerLink="/project">
+                    <i class="icon mdi mdi-shopping-basket"></i>
+                    <span>Project Request</span>
+                  </a>
+                </li>
+                <li>
+                  <a routerLink="/contact">
+                    <i class="icon mdi mdi-shopping-basket"></i>
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+                <li>
+                  <a (click)="Auth.logOutuser()" style="cursor:pointer">
+                    <i class="icon mdi mdi-settings"></i>
+                    <span>Log Out</span>
+                  </a>
+                
+                </li>
+
+
+              </ul>
+            </div>
+            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+              <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+            </div>
+            <div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
+              <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Navigation -->
+    <div class="be-content">
+      <div class="main-content container-fluid">
+   
+
+        <!-- Latest Orders -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="main-content container-fluid">
+              <div class="email-head">
+                <div class="email-head-subject">
+                  <div class="title">
+                    <a href="#" class="active">
+                      <span class="icon mdi mdi-star"></span>
+                    </a>
+                    <span>{{detaildata.subject}}</span>
+                    <div class="icons">
+                    <a style="font-size:12px; font-weight: 500">
+                      {{detaildata.email}}</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="email-head-sender">
+                  <div class="date">{{detaildata.created_at}}</div>
+                  <div class="avatar">
+                    <img src="assets/img/avatar3.png" alt="Avatar">
+                  </div>
+                  <div class="sender">
+                    <a href="">{{detaildata.name}} </a> <br>
+                  </div>
+                </div>
+              </div>
+              <div class="email-body">
+               {{detaildata.description}}
+              </div>
+              <div class="email-attachments">
+                <div class="title"> Company
+                  <span>{{detaildata.company}}</span>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      Budget
+                      <span>{{detaildata.budget}}</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Project Type
+                      <span>{{detaildata.type}}</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+   
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="be-scroll-top"></div>
+
+</body>
