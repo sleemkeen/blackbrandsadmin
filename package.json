@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build.prod": "ng build --aot --prod --progress false --base-href \"https://sleemkeen.github.io/blackbrandsadmin/\""
-    
+    "build.prod": "ng build --aot --prod --progress false --base-href \"https://sleemkeen.github.io/blackbrandsadmin/\"",
+    "deploy": "ng build --prod --base-href https://sleemkeen.github.io/blackbrandsadmin && angular-cli-ghpages --branch gh-pages"
   },
   "private": true,
   "dependencies": {
