@@ -59,7 +59,7 @@ export class AuthService {
 
   getdetail(id) {
 
-    return this.http.get(url + '/api/getdetail/' + id), { headers: headers };
+    return this.http.get(url + '/api/getdetail/' + id, { headers: headers });
 
   }
 
