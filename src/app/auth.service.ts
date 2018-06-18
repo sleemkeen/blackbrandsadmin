@@ -5,6 +5,10 @@ import { Router } from '@angular/router';
 const url = 'https://blackbrands.co';
 const _headers = new HttpHeaders();
 const headers = _headers.append('Content-Type', 'application/json');
+_headers.append('Accept', 'application/json');
+
+
+
 
 
 @Injectable({

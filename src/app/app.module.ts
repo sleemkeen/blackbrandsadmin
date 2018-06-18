@@ -43,7 +43,9 @@ const appRoute: Routes  = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoute ),
+    RouterModule.forRoot(appRoute, {
+      useHash: true
+    }),
     HttpClientModule,
     ToastrModule.forRoot()
   ],
